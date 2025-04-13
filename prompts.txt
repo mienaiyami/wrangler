@@ -1,0 +1,10 @@
+1. How can I extend the Wrangler grammar in ANTLR4 to support parsing byte size units like KB, MB, GB?
+2. Please help me implement methods to convert between different byte units (bytes, kilobytes, megabytes) in a ByteSize class.
+3. What's the best approach for parsing time duration strings like "150ms" or "2.5h" into a standardized milliseconds format?
+4. I need to create a directive in Wrangler that can aggregate byte sizes across multiple rows. What should the structure look like?
+5. How can I accumulate values across different rows in a CDAP data pipeline using the ExecutorContext?
+6. What's the recommended way to implement classes that handle collections of measurements (ByteSizeList and TimeDurationList)?
+7. Can you show me best practices for implementing JSON serialization for custom data types in the Wrangler parser?
+8. How should I implement unit tests for ByteSizeList to ensure it properly handles collections and conversions?
+9. What's the proper way to validate TimeDurationList JSON serialization in unit tests?
+10. How can I efficiently implement conversion between different time units (milliseconds, seconds, minutes) in a reusable class?
