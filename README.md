@@ -14,21 +14,21 @@ cleansing, transformation, and filtering using a set of data manipulation instru
 (directives). These instructions are either generated using an interative visual tool or
 are manually created.
 
-  * Data Prep defines few concepts that might be useful if you are just getting started with it. Learn about them [here](wrangler-docs/concepts.md)
-  * The Data Prep Transform is [separately documented](wrangler-transform/wrangler-docs/data-prep-transform.md).
-  * [Data Prep Cheatsheet](wrangler-docs/cheatsheet.md)
+* Data Prep defines few concepts that might be useful if you are just getting started with it. Learn about them [here](wrangler-docs/concepts.md)
+* The Data Prep Transform is [separately documented](wrangler-transform/wrangler-docs/data-prep-transform.md).
+* [Data Prep Cheatsheet](wrangler-docs/cheatsheet.md)
 
 ## New Features
 
 More [here](wrangler-docs/upcoming-features.md) on upcoming features.
 
-  * **User Defined Directives, also known as UDD**, allow you to create custom functions to transform records within CDAP DataPrep or a.k.a Wrangler. CDAP comes with a comprehensive library of functions. There are however some omissions, and some specific cases for which UDDs are the solution. Additional information on how you can build your custom directives [here](wrangler-docs/custom-directive.md).
-    * Migrating directives from version 1.0 to version 2.0 [here](wrangler-docs/directive-migration.md)
-    * Information about Grammar [here](wrangler-docs/grammar/grammar-info.md)
-    * Various `TokenType` supported by system [here](../api/src/main/java/io/cdap/wrangler/api/parser/TokenType.java)
-    * Custom Directive Implementation Internals [here](wrangler-docs/udd-internal.md)
+* **User Defined Directives, also known as UDD**, allow you to create custom functions to transform records within CDAP DataPrep or a.k.a Wrangler. CDAP comes with a comprehensive library of functions. There are however some omissions, and some specific cases for which UDDs are the solution. Additional information on how you can build your custom directives [here](wrangler-docs/custom-directive.md).
+  * Migrating directives from version 1.0 to version 2.0 [here](wrangler-docs/directive-migration.md)
+  * Information about Grammar [here](wrangler-docs/grammar/grammar-info.md)
+  * Various `TokenType` supported by system [here](../api/src/main/java/io/cdap/wrangler/api/parser/TokenType.java)
+  * Custom Directive Implementation Internals [here](wrangler-docs/udd-internal.md)
 
-  * A new capability that allows CDAP Administrators to **restrict the directives** that are accessible to their users.
+* A new capability that allows CDAP Administrators to **restrict the directives** that are accessible to their users.
 More information on configuring can be found [here](wrangler-docs/exclusion-and-aliasing.md)
 
 ## Demo Videos and Recipes
@@ -37,29 +37,29 @@ Videos and Screencasts are best way to learn, so we have compiled simple, short 
 
 ### Videos
 
-  * [SCREENCAST] [Creating Lookup Dataset and Joining](https://www.youtube.com/watch?v=Nc1b0rsELHQ)
-  * [SCREENCAST] [Restricted Directives](https://www.youtube.com/watch?v=71EcMQU714U)
-  * [SCREENCAST] [Parse Excel files in CDAP](https://www.youtube.com/watch?v=su5L1noGlEk)
-  * [SCREENCAST] [Parse File As AVRO File](https://www.youtube.com/watch?v=tmwAw4dKUNc)
-  * [SCREENCAST] [Parsing Binary Coded AVRO Messages](https://www.youtube.com/watch?v=Ix_lPo-PDJY)
-  * [SCREENCAST] [Parsing Binary Coded AVRO Messages & Protobuf messages using schema registry](https://www.youtube.com/watch?v=LVLIdWnUX1k)
-  * [SCREENCAST] [Quantize a column - Digitize](https://www.youtube.com/watch?v=VczkYX5SRtY)
-  * [SCREENCAST] [Data Cleansing capability with send-to-error directive](https://www.youtube.com/watch?v=aZd5H8hIjDc)
-  * [SCREENCAST] [Building Data Prep from the GitHub source](https://youtu.be/pGGjKU04Y38)
-  * [VOICE-OVER] [End-to-End Demo Video](https://youtu.be/AnhF0qRmn24)
-  * [SCREENCAST] [Ingesting into Kudu](https://www.youtube.com/watch?v=KBW7a38vlUM)
-  * [SCREENCAST] [Realtime HL7 CCDA XML from Kafka into Time Parititioned Parquet](https://youtu.be/0fqNmnOnD-0)
-  * [SCREENCAST] [Parsing JSON file](https://youtu.be/vwnctcGDflE)
-  * [SCREENCAST] [Flattening arrays](https://youtu.be/SemHxgBYIsY)
-  * [SCREENCAST] [Data cleansing with send-to-error directive](https://www.youtube.com/watch?v=aZd5H8hIjDc)
-  * [SCREENCAST] [Publishing to Kafka](https://www.youtube.com/watch?v=xdc8pvvlI48)
-  * [SCREENCAST] [Fixed length to JSON](https://www.youtube.com/watch?v=3AXu4m1swuM)
+* [SCREENCAST] [Creating Lookup Dataset and Joining](https://www.youtube.com/watch?v=Nc1b0rsELHQ)
+* [SCREENCAST] [Restricted Directives](https://www.youtube.com/watch?v=71EcMQU714U)
+* [SCREENCAST] [Parse Excel files in CDAP](https://www.youtube.com/watch?v=su5L1noGlEk)
+* [SCREENCAST] [Parse File As AVRO File](https://www.youtube.com/watch?v=tmwAw4dKUNc)
+* [SCREENCAST] [Parsing Binary Coded AVRO Messages](https://www.youtube.com/watch?v=Ix_lPo-PDJY)
+* [SCREENCAST] [Parsing Binary Coded AVRO Messages & Protobuf messages using schema registry](https://www.youtube.com/watch?v=LVLIdWnUX1k)
+* [SCREENCAST] [Quantize a column - Digitize](https://www.youtube.com/watch?v=VczkYX5SRtY)
+* [SCREENCAST] [Data Cleansing capability with send-to-error directive](https://www.youtube.com/watch?v=aZd5H8hIjDc)
+* [SCREENCAST] [Building Data Prep from the GitHub source](https://youtu.be/pGGjKU04Y38)
+* [VOICE-OVER] [End-to-End Demo Video](https://youtu.be/AnhF0qRmn24)
+* [SCREENCAST] [Ingesting into Kudu](https://www.youtube.com/watch?v=KBW7a38vlUM)
+* [SCREENCAST] [Realtime HL7 CCDA XML from Kafka into Time Parititioned Parquet](https://youtu.be/0fqNmnOnD-0)
+* [SCREENCAST] [Parsing JSON file](https://youtu.be/vwnctcGDflE)
+* [SCREENCAST] [Flattening arrays](https://youtu.be/SemHxgBYIsY)
+* [SCREENCAST] [Data cleansing with send-to-error directive](https://www.youtube.com/watch?v=aZd5H8hIjDc)
+* [SCREENCAST] [Publishing to Kafka](https://www.youtube.com/watch?v=xdc8pvvlI48)
+* [SCREENCAST] [Fixed length to JSON](https://www.youtube.com/watch?v=3AXu4m1swuM)
 
 ### Recipes
 
-  * [Parsing Apache Log Files](wrangler-demos/parsing-apache-log-files.md)
-  * [Parsing CSV Files and Extracting Column Values](wrangler-demos/parsing-csv-extracting-column-values.md)
-  * [Parsing HL7 CCDA XML Files](wrangler-demos/parsing-hl7-ccda-xml-files.md)
+* [Parsing Apache Log Files](wrangler-demos/parsing-apache-log-files.md)
+* [Parsing CSV Files and Extracting Column Values](wrangler-demos/parsing-csv-extracting-column-values.md)
+* [Parsing HL7 CCDA XML Files](wrangler-demos/parsing-hl7-ccda-xml-files.md)
 
 ## Available Directives
 
@@ -167,14 +167,13 @@ These directives are currently available:
 ## Performance
 
 Initial performance tests show that with a set of directives of high complexity for
-transforming data, *DataPrep* is able to process at about ~106K records per second. The
-rates below are specified as *records/second*. 
+transforming data, _DataPrep_ is able to process at about ~106K records per second. The
+rates below are specified as _records/second_.
 
 | Directive Complexity | Column Count |    Records |           Size | Mean Rate |
 | -------------------- | :----------: | ---------: | -------------: | --------: |
 | High (167 Directives) |      426      | 127,946,398 |  82,677,845,324 | 106,367.27 |
 | High (167 Directives) |      426      | 511,785,592 | 330,711,381,296 | 105,768.93 |
-
 
 ## Contact
 
@@ -184,7 +183,7 @@ CDAP User Group and Development Discussions:
 
 * [cdap-user@googlegroups.com](https://groups.google.com/d/forum/cdap-user)
 
-The *cdap-user* mailing list is primarily for users using the product to develop
+The _cdap-user_ mailing list is primarily for users using the product to develop
 applications or building plugins for appplications. You can expect questions from
 users, release announcements, and any other discussions that we think will be helpful
 to the users.
@@ -197,7 +196,6 @@ CDAP IRC Channel: [#cdap on irc.freenode.net](http://webchat.freenode.net?channe
 
 CDAP Users on Slack: [cdap-users team](https://cdap-users.herokuapp.com)
 
-
 ## License and Trademarks
 
 Copyright © 2016-2019 Cask Data, Inc.
@@ -205,7 +203,7 @@ Copyright © 2016-2019 Cask Data, Inc.
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
 in compliance with the License. You may obtain a copy of the License at
 
-http://www.apache.org/licenses/LICENSE-2.0
+<http://www.apache.org/licenses/LICENSE-2.0>
 
 Unless required by applicable law or agreed to in writing, software distributed under the
 License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,

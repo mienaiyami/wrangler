@@ -62,8 +62,12 @@ directive
     | numberList
     | boolList
     | stringList
+    | byteSizeList
+    | timeDurationList
     | numberRanges
     | properties
+    | byteSizeArg
+    | timeDurationArg
   )*?
   ;
 
@@ -128,7 +132,7 @@ propertyList
  ;
 
 property
- : Identifier '=' ( text | number | bool )
+ : Identifier '=' ( text | number | bool | byteSizeArg | timeDurationArg )
  ;
 
 numberRanges
@@ -137,10 +141,12 @@ numberRanges
 
 numberRange
  : Number ':' Number '=' value
+ | BYTE_SIZE ':' BYTE_SIZE '=' value
+ | TIME_DURATION ':' TIME_DURATION '=' value
  ;
 
 value
- : String | Number | Column | Bool
+ : String | Number | Column | Bool | BYTE_SIZE | TIME_DURATION
  ;
 
 ecommand
@@ -167,6 +173,14 @@ bool
  : Bool
  ;
 
+byteSizeArg
+ : BYTE_SIZE
+ ;
+
+timeDurationArg
+ : TIME_DURATION
+ ;
+
 condition
  : OBrace (~CBrace | condition)* CBrace
  ;
@@ -189,6 +203,14 @@ boolList
 
 stringList
  : String (',' String)+
+ ;
+
+byteSizeList
+ : BYTE_SIZE (',' BYTE_SIZE)+
+ ;
+
+timeDurationList
+ : TIME_DURATION (',' TIME_DURATION)+
  ;
 
 identifierList
@@ -310,4 +332,29 @@ fragment Int
 
 fragment Digit
  : [0-9]
+ ;
+
+BYTE_SIZE
+ : Int BYTE_UNIT
+ ;
+
+TIME_DURATION
+ : Int TIME_UNIT
+ ;
+
+fragment BYTE_UNIT
+ : 'B'
+ | 'KB' | 'K'
+ | 'MB' | 'M'
+ | 'GB' | 'G'
+ | 'TB' | 'T'
+ | 'PB' | 'P'
+ ;
+
+fragment TIME_UNIT
+ : 'ms'
+ | 's'
+ | 'm'
+ | 'h'
+ | 'd'
  ;
